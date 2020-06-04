@@ -37,9 +37,11 @@ public class Subscriber
         try
         {
             status = run(communicator, destroyHook, extraArgs.toArray(new String[extraArgs.size()]));
+            System.out.println("Conexion Establecida");
         }
         catch(Exception ex)
         {
+        	System.out.println("Fail");
             ex.printStackTrace();
             status = 1;
         }

@@ -3,7 +3,7 @@
 # subscriber adapter. These endpoints are where the client receives
 # topic messages from IceStorm.
 #
-Clock.Subscriber.Endpoints=tcp:udp
+Clock.Subscriber.Endpoints=tcp -h 25.108.235.8:udp -h 25.108.235.8
 
 #
 # Only listen on the localhost interface by default.
@@ -13,7 +13,7 @@ Ice.Default.Host=localhost
 #
 # This property is used by the clients to connect to IceStorm.
 #
-TopicManager.Proxy=DemoIceStorm/TopicManager:default -h localhost -p 10000
+TopicManager.Proxy=DemoIceStorm/TopicManager:default -h 25.151.152.139 -p 10000
 
 #
 # Network Tracing
